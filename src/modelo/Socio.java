@@ -1,3 +1,5 @@
+package modelo;
+
 import java.util.ArrayList;
 
 public class Socio {
@@ -28,7 +30,7 @@ public class Socio {
 		this.id = id;
 	}
 
-	private String getNombre() {
+	public String getNombre() {
 		return nombre;
 	}
 

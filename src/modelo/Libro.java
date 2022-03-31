@@ -1,3 +1,5 @@
+package modelo;
+
 public class Libro {
 	private String ISBN;
 	private String referencia;

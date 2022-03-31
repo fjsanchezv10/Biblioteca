@@ -1,3 +1,5 @@
+package modelo;
+
 
 public class Tools {
 	public static boolean isWrongString(String string) {

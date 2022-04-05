@@ -11,14 +11,17 @@ import modelo.Socio;
 import objectMother.SocioMother;
 import repositories.SocioRepository;
 import repositories.SocioRepositoryImpl;
+import repositories.SocioRepositoryImplOM;
 
 class SocioRepositoryTest {
 
 	@Test
 	void testFindSocioByName() {
-		SocioRepository socioRepository=new SocioRepositoryImpl();
+		SocioRepository socioRepository=new SocioRepositoryImplOM();
 		List<Socio> socios = SocioMother.getSocios();
-		assertEquals(socios.get(0),socioRepository.findSocioByName(socios.get(0).getNombre()));
+		Socio socio = socios.get(0);
+		Socio findSocioByName = socioRepository.findSocioByName(socio.getNombre());
+		assertEquals(socio,findSocioByName);
 		assertNull(socioRepository.findSocioByName("Felipondio"));
 	}
 

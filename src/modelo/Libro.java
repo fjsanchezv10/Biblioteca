@@ -12,12 +12,12 @@ public class Libro {
 
 	// Vamos a hacerlo despues en Libro
 	private void setISBN(String iSBN) {
-		assert Tools.isWrongString(iSBN);
+		assert Tools.isRightString(iSBN);
 		ISBN = iSBN;
 	}
 
 	private void setReferencia(String referencia) {
-		assert Tools.isWrongString(referencia);
+		assert Tools.isRightString(referencia);
 		this.referencia = referencia;
 	}
 

@@ -91,4 +91,8 @@ public class Socio {
 		this.prestamosDevueltos = prestamosDevueltos;
 	}
 
+	public boolean isLimitePrestamosNoDevueltosAlcanzados() {
+		return prestamosPendientes.size()<maximosPrestamosPendientes;
+	}
+
 }

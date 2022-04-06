@@ -19,5 +19,13 @@ public class SocioRepositoryImplOM implements SocioRepository {
 		}
 		return null;
 	}
+	@Override
+	public boolean exists(String nombreSocio) {
+		return findSocioByName(nombreSocio)!=null;
+	}
+	@Override
+	public boolean comprobarLimitePrestamos(String nombreSocio) {
+		return findSocioByName(nombreSocio).isLimitePrestamosNoDevueltosAlcanzados();
+	}
 
 }

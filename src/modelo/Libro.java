@@ -3,9 +3,7 @@ package modelo;
 public class Libro {
 	private String ISBN;
 	private String referencia;
-	private boolean disponible=false;
-
-	
+	private boolean disponible=true;
 
 	public Libro(String iSBN, String referencia) {
 		super();

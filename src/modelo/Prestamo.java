@@ -16,49 +16,47 @@ public class Prestamo {
 		setLibro(libro);
 	}
 
-	
+	public Prestamo(Long id, Libro libro) {
+		this(id, LocalDate.now(), libro);
+	}
+
 	private Long getId() {
 		return id;
 	}
-
 
 	private LocalDate getInicio() {
 		return inicio;
 	}
 
-
 	private LocalDate getDevolucion() {
 		return devolucion;
 	}
-
 
 	private Libro getLibro() {
 		return libro;
 	}
 
-
 	private static int getPlazoprestamoendias() {
 		return plazoPrestamoEnDias;
 	}
 
-
 	private void setId(Long id) {
-		assert id>0;
+		assert id > 0;
 		this.id = id;
 	}
 
 	private void setInicio(LocalDate inicio) {
-		assert inicio!=null;
+		assert inicio != null;
 		this.inicio = inicio;
 	}
 
 	private void setDevolucion(LocalDate devolucion) {
-		assert devolucion!=null;
+		assert devolucion != null;
 		this.devolucion = devolucion;
 	}
 
 	private void setLibro(Libro libro) {
-		assert libro!=null;
+		assert libro != null;
 		this.libro = libro;
 	}
 

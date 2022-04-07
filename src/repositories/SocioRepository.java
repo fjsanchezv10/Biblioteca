@@ -1,11 +1,14 @@
 package repositories;
 
+import modelo.Libro;
 import modelo.Socio;
 
 public interface SocioRepository {
-	public Socio findSocioByName(String nombre);
+	public Socio findSocioByID(Long idSocio);
 
-	public boolean exists(String nombreSocio);
+	public boolean exists(Long idSocio);
 
-	public boolean comprobarLimitePrestamos(String nombreSocio);
+	public boolean comprobarLimitePrestamos(Long idSocio);
+
+	public boolean prestarLibro(Socio socio, Libro libro);
 }

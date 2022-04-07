@@ -7,7 +7,7 @@ public class Socio {
 	private Long id;
 	private String nombre;
 	private String datosPersonales;
-	private ArrayList<Prestamo> prestamosPendientes;
+	public ArrayList<Prestamo> prestamosPendientes;
 	private ArrayList<Prestamo> prestamosDevueltos;
 	private static final int maximosPrestamosPendientes=2;
 
@@ -21,7 +21,7 @@ public class Socio {
 		setPrestamosDevueltos(new ArrayList<Prestamo>());
 	}
 
-	private Long getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -93,6 +93,14 @@ public class Socio {
 
 	public boolean isLimitePrestamosNoDevueltosAlcanzados() {
 		return prestamosPendientes.size()<maximosPrestamosPendientes;
+	}
+
+	public boolean crearNuevoPrestamo(Prestamo prestamo) {
+		return this.prestamosPendientes.add(prestamo);
+	}
+
+	public Long getNewId() {
+		return (long) (prestamosDevueltos.size()+prestamosPendientes.size())+1;
 	}
 
 }

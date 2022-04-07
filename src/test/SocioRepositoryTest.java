@@ -20,9 +20,9 @@ class SocioRepositoryTest {
 		SocioRepository socioRepository=new SocioRepositoryImplOM();
 		List<Socio> socios = SocioMother.getSocios();
 		Socio socio = socios.get(0);
-		Socio findSocioByName = socioRepository.findSocioByName(socio.getNombre());
+		Socio findSocioByName = socioRepository.findSocioByID(socio.getId());
 		assertEquals(socio,findSocioByName);
-		assertNull(socioRepository.findSocioByName("Felipondio"));
+		assertNull(socioRepository.findSocioByID(99988l));
 	}
 
 }

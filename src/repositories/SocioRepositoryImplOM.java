@@ -1,5 +1,6 @@
 package repositories;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import modelo.Libro;
@@ -36,6 +37,16 @@ public class SocioRepositoryImplOM implements SocioRepository {
 		boolean isPrestado = socio.crearNuevoPrestamo(new Prestamo(socio.getNewId(),libro));
 		libro.setDisponible(!isPrestado);
 		return isPrestado;
+	}
+	@Override
+	public List<Socio> listarSociosVencidos() {
+		ArrayList<Socio> pendientes=new ArrayList<>();
+		for (Socio socio : socios) {
+			if(socio.comprobarPrestamosVencidos()) {
+				pendientes.add(socio);
+			}
+		}
+		return pendientes;
 	}
 	
 

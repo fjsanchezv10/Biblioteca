@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="control.PrestamoLibroControllerImpl" project="Biblioteca" 
     file="/Biblioteca/src/control/PrestamoLibroControllerImpl.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1107" y="208"/>    
+    <position height="-1" width="-1" x="897" y="56"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -12,7 +12,7 @@
   </class>  
   <interface id="2" language="java" name="repositories.SocioRepository" project="Biblioteca" 
     file="/Biblioteca/src/repositories/SocioRepository.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="720" y="147"/>    
+    <position height="-1" width="-1" x="650" y="298"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -21,7 +21,7 @@
   </interface>  
   <class id="3" language="java" name="objectMother.SocioMother" project="Biblioteca" 
     file="/Biblioteca/src/objectMother/SocioMother.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="158" y="308"/>    
+    <position height="-1" width="-1" x="231" y="591"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -30,129 +30,96 @@
   </class>  
   <class id="4" language="java" name="repositories.SocioRepositoryImplOM" project="Biblioteca" 
     file="/Biblioteca/src/repositories/SocioRepositoryImplOM.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="396" y="157"/>    
+    <position height="-1" width="-1" x="260" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="test.PrestamoLibroTest" project="Biblioteca" 
-    file="/Biblioteca/src/test/PrestamoLibroTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="114" y="764"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
-      <operations public="false" package="false" protected="false" private="false" static="false"/>    
-    </display>  
-  </class>  
-  <interface id="6" language="java" name="control.PrestamoLibroController" project="Biblioteca" 
-    file="/Biblioteca/src/control/PrestamoLibroController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="533" y="348"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
-      <operations public="false" package="false" protected="false" private="false" static="false"/>    
-    </display>  
-  </interface>  
-  <interface id="7" language="java" name="repositories.LibroRepositry" project="Biblioteca" 
+  <interface id="5" language="java" name="repositories.LibroRepositry" project="Biblioteca" 
     file="/Biblioteca/src/repositories/LibroRepositry.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1018" y="532"/>    
+    <position height="-1" width="-1" x="975" y="295"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </interface>  
-  <class id="8" language="java" name="repositories.LibroRepositoryImplOM" project="Biblioteca" 
+  <class id="6" language="java" name="repositories.LibroRepositoryImplOM" project="Biblioteca" 
     file="/Biblioteca/src/repositories/LibroRepositoryImplOM.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="663" y="586"/>    
+    <position height="-1" width="-1" x="960" y="511"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="objectMother.LibroMother" project="Biblioteca" 
+  <class id="7" language="java" name="objectMother.LibroMother" project="Biblioteca" 
     file="/Biblioteca/src/objectMother/LibroMother.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="675" y="819"/>    
+    <position height="-1" width="-1" x="956" y="748"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <dependency id="10">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="9"/>  
+  <class id="8" language="java" name="control.ListadoSociosPrestamosVencidosControllerImp" project="Biblioteca" 
+    file="/Biblioteca/src/control/ListadoSociosPrestamosVencidosControllerImp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="378" y="67"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
-  <association id="11">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="12" name="prestamos">        
-        <position height="0" width="0" x="-486" y="-127"/>      
-      </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-486" y="-127"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="14">    
+  <realization id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <association id="12">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="15" name="socioRepository">        
-        <position height="0" width="0" x="163" y="-1"/>      
+      <attribute id="13" name="socioRepository">        
+        <position height="0" width="0" x="93" y="150"/>      
       </attribute>      
-      <multiplicity id="16" minimum="0" maximum="1">        
-        <position height="0" width="0" x="163" y="-1"/>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="93" y="150"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="17">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="18">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <realization id="19">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <realization id="22">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <dependency id="23">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="24">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <association id="25">    
+  <association id="15">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="26" name="libroRepositry"/>      
-      <multiplicity id="27" minimum="0" maximum="1"/>    
+      <attribute id="16" name="libroRepositry">        
+        <position height="0" width="0" x="-43" y="-237"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-43" y="-237"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
+  <association id="18">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="19" name="socioRepository"/>      
+      <multiplicity id="20" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

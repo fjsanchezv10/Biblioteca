@@ -60,4 +60,8 @@ public class Prestamo {
 		this.libro = libro;
 	}
 
+	public boolean isVencido() {
+		return LocalDate.now().isBefore(inicio.plusDays(plazoPrestamoEnDias));
+	}
+
 }

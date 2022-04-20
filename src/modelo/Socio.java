@@ -1,6 +1,7 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Socio {
 
@@ -101,6 +102,16 @@ public class Socio {
 
 	public Long getNewId() {
 		return (long) (prestamosDevueltos.size()+prestamosPendientes.size())+1;
+	}
+
+	public boolean comprobarPrestamosVencidos() {
+		boolean respuesta=false;
+		Iterator<Prestamo> iterator = prestamosPendientes.iterator();
+		while(iterator.hasNext()&&!respuesta) {
+			Prestamo prestamo = iterator.next();
+			respuesta=prestamo.isVencido();
+		}
+		return respuesta;
 	}
 
 }

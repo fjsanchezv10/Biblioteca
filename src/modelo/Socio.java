@@ -3,6 +3,8 @@ package modelo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import modelo.response.SocioResponse;
+
 public class Socio {
 
 	private Long id;
@@ -112,6 +114,10 @@ public class Socio {
 			respuesta=prestamo.isVencido();
 		}
 		return respuesta;
+	}
+
+	public SocioResponse getSocioResponse() {
+		return new SocioResponse(this.nombre, this.prestamosDevueltos.size());
 	}
 
 }

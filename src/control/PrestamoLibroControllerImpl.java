@@ -2,6 +2,7 @@ package control;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 import modelo.Prestamo;
@@ -38,33 +39,25 @@ public class PrestamoLibroControllerImpl implements PrestamoLibroController {
 
 
 	@Override
-	public boolean devolverLibro() {
+	public boolean devolverLibro(Long idSocio, String referenciaLibro) {
 		/*
 		 *necesito num socio y num referencia, para buscar el prestamo pendiente
-		 *puede haber otra forma de buscar: mediante el num de socio, y el sistema nos mostrara los prestamos pendientes,
-		 *pudiendo seleccionar uno de ellos.
 		 *Si el socio devuelve un prestamo que esta dentro del plazo la operacion es correcta, si esta fuera de plazo
 		 *se debe avisar de la circunstancia
 		*/
-		Scanner entrada = new Scanner(System.in);
-        String referencia;
-        Long id = null;
-        ArrayList<Socio> sociosVencidos = new ArrayList<>();
-        Iterator<Socio> iter = sociosVencidos.iterator();
-        int contador = 0;
-        while(iter.hasNext()) {
-            if(iter.next().getId()==id) {
-                System.out.println(contador+". "+(iter.next().prestamosPendientes)+"\n");
-                referencia = entrada.next();
-                if(libroRepositry.findLibroByReferencia(referencia).isDisponible()==false) {
-                	System.out.println("El libro no ha sido devuelto aun");
-                	return false;
-                }else {
-                	return true;
-                }
-            }
-        }
-		return false;
+		boolean isPlazoVencido = false;
+		if(socioRepository.exists(idSocio)&&libroRepositry.exists(referenciaLibro)) {
+			if(libroRepositry.isDisponible(referenciaLibro)==false) {
+				isPlazoVencido = socioRepository.findSocioByID(idSocio).comprobarPrestamosVencidos();
+			}
+		}
+		if(isPlazoVencido==true) {
+			System.out.println("La devolucion del libro esta fuera de plazo");
+		} else {
+			System.out.println("La devolucion se ha hecho correctamente");
+		}
+		
+		return isPlazoVencido;
 	}
 	
 }

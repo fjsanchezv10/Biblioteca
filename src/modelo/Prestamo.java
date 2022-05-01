@@ -20,7 +20,7 @@ public class Prestamo {
 		this(id, LocalDate.now(), libro);
 	}
 
-	private Long getId() {
+	public Long getId() {
 		return id;
 	}
 
